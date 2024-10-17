@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Task Manager Team">
+    <title>Task Manager - About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" aria-label="Task Manager About">Task Manager</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tasks.html">Tasks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" aria-current="page">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="extra.html">Extra</a>
+              </li>
+            </ul>
+          </div>
+          <button class="toggle" onclick="SwitchMode()" aria-label="Toggle dark mode"><img src="./images/moon-fill.svg" alt="Toggle mode"></button>
+        </div>
+      </nav>
+    </div>
+      <br/>
+      <h2>About Task Manager</h2>
+      <p>Task Manager is a powerful tool to help individuals and teams manage tasks efficiently. With features like task tracking, sorting, filtering, and more, it's designed to streamline your workflow.</p>
+      <p>Our goal is to simplify task management and improve productivity across various industries by providing a user-friendly interface and robust features.</p>
+      <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-card">
+          <img src="./images/team_member.JPG" alt="Margarita Mark" >
+          <h4>Margarita Mark</h4>
+          <p>Project Manager</p>
+        </div>
+      </section>
+      <footer class="text-center py-2" aria-label="Footer">
+        <div class="container">
+        powered by:<a href="mailto:m.markoulatou@acg.edu">Task Manager team <img src="./images/calendar-check.svg" alt="Application Logo"></a>  
+        <br/>
+        &copy; 2024 Task Manager. All rights reserved.	
+        </div>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
