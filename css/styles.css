@@ -6,21 +6,22 @@ body {
     padding: 0;
     color: black;
     text-align: center;
+    line-height: 1.6;
 }
 div.menu {
-    background-color:rgba(137, 155, 117, 55%);
+    background-color:rgba(137, 155, 117, 60%);
     font-family: copperplate, fantasy;
-    padding: 20px;
-    font-size: 19px;
-    font-style: bold;
+    padding: 10px 0;
 }
 
 .navbar-brand, .navbar-nav .nav-link {
     color: beige;
     padding: 14px 20px;
     cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    font-size: 22px;
 }
-.navbar-brand:hover, .navbar-nav:hover .nav-link:hover{
+ .navbar-nav .nav-link:hover{
     color:#222;
 }
 a {
@@ -33,6 +34,8 @@ a:hover {
 footer {
     background-color:rgba(137, 155, 117, 55%);
     font-family: copperplate, fantasy;
+    padding: 10px 0;
+    font-size: 14px;
 }
 .dark{
     background-color: #222;
@@ -42,22 +45,23 @@ button {
     background-color: white;
     color:#899b75;
     border-radius: 3pt;
-    padding: auto;
+    padding: 10px 20px;
     border: 2px solid #899b75;
-    width: auto;
-    height: auto;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 button:hover{
-    color: black;
     background-color: #899b75;
+    color:beige;
 }
 form { 
     background-color: #f4f4f4;
     padding: 20px;
-    margin: auto;
+    margin: 20px auto;
     max-width: 500px;
     border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color:#6f7e59;
 }
 label {
     font-size: 16px;
@@ -65,6 +69,7 @@ label {
     display: block;
     margin-bottom: 5px;
     text-align: left;
+    color:#6f7e59;
 }
 select, input[type="text"], input[type="date"] {
     width: 90%;
@@ -75,10 +80,14 @@ select, input[type="text"], input[type="date"] {
     font-size: 16px;
 }
 button.toggle {
-    background-color:rgba(137, 155, 117, 55%);
+    background-color: rgba(137, 155, 117, 45%);
     border:none;
+    padding:5px 10px;
 }
 button.toggle:hover {
-    border:1px solid;
+    border:1px solid beige;
     cursor: pointer;
+}
+section {
+    padding: 40px 20px;
 }

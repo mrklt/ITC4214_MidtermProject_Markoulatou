@@ -40,26 +40,91 @@
         </div>
       </nav>
     </div>
-      <br/>
+
+    <div class="abouteffortly">
       <h2>About Effortly</h2>
-      <p>Effortly is a powerful tool to help individuals and teams manage tasks efficiently. With features like task tracking, sorting, filtering, and more, it's designed to streamline your workflow.</p>
+      <p>Effortly is a powerful tool to help individuals and teams manage tasks efficiently.</p>
+      <p>With features like task tracking, sorting, filtering, and more, it's designed to streamline your workflow.</p>
       <p>Our goal is to simplify task management and improve productivity across various industries by providing a user-friendly interface and robust features.</p>
-      <section class="team-section">
-        <h2>Meet Our Team</h2>
-        <div class="team-card">
-          <img src="./images/team_member.JPG" alt="Margarita Mark" >
-          <h4>Margarita Mark</h4>
-          <p>Project Manager</p>
+    </div>
+
+    <section class="team-section">
+      <h2>Meet Our Team</h2>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card team-card">
+              <img class="card-img-top img-thumbnail" src="./images/Margarita.JPG" alt="Margarita Mark">
+              <div class="card-body">
+                <h4 class="card-title">Margarita Mark</h4>
+                <p class="card-text">Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card team-card">
+              <img class="card-img-top img-thumbnail" src="./images/Elon.JPG" alt="Elon Musk">
+              <div class="card-body">
+                <h4 class="card-title">Elon Musk</h4>
+                <p class="card-text">Manager's Assistant</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card team-card">
+              <img class="card-img-top img-thumbnail" src="./images/AI.JPG" alt="AI Tools">
+              <div class="card-body">
+                <h4 class="card-title">AI Tools</h4>
+                <p class="card-text">AI Assistant</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <footer class="text-center py-2" aria-label="Footer">
-        <div class="container">
+      </div>
+    </section>
+    <section class="carousel-section py-5">
+      <h2>Testimonials</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/Testimonial1.JPG" class="d-block w-30 img-thumbnail" alt="Testimonial 1">
+            <div class="carousel-caption d-none d-md-block">
+              <p>"Effortly has completely changed how we manage tasks in our company."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Testimonial2.JPG" class="d-block w-30 img-thumbnail" alt="Testimonial 2">
+            <div class="carousel-caption d-none d-md-block">
+              <p>"Using Effortly, we improved our team's productivity by 40%!"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Testimonial3.JPG" class="d-block w-30 img-thumbnail" alt="Testimonial 3">
+            <div class="carousel-caption d-none d-md-block">
+              <p>"A seamless and efficient way to manage tasks for any team."</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <footer class="text-center py-2" aria-label="Footer">
+      <div class="container">
         powered by : <a href="mailto:m.markoulatou@acg.edu">Effortly team</a> <img src="./images/card-checklist.svg" alt="Application Logo">  
         <br/>
         &copy; 2024 Effortly. All rights reserved.	
-        </div>
-      </footer>
-      <script src="./javascript/script.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </footer>
+
+    <script src="./javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

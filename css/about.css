@@ -1,0 +1,55 @@
+div.abouteffortly {
+    padding:50px;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.team-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-color: #f4f4f4;
+    border: none;
+}
+
+.team-card img {
+    width: auto;
+    border-radius: 50%;
+    max-width: 200px;
+    margin: auto;
+}
+
+.team-card .card-body {
+    padding-top: 20px;
+}
+
+.team-card h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #6f7e59;
+}
+
+.team-card p{
+    font-size: 18px;
+    color: #6f7e59;
+}
+
+.carousel-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+    margin:auto;
+}
+
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
