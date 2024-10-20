@@ -1,0 +1,84 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(137,155,117, 15%);
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+div.menu {
+    background-color:rgba(137, 155, 117, 55%);
+    font-family: copperplate, fantasy;
+    padding: 20px;
+    font-size: 19px;
+    font-style: bold;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: beige;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+.navbar-brand:hover, .navbar-nav:hover .nav-link:hover{
+    color:#222;
+}
+a {
+    color: beige;
+}
+a:hover {
+    color: black;
+    cursor: pointer;
+}
+footer {
+    background-color:rgba(137, 155, 117, 55%);
+    font-family: copperplate, fantasy;
+}
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
+button {
+    background-color: white;
+    color:#899b75;
+    border-radius: 3pt;
+    padding: auto;
+    border: 2px solid #899b75;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+button:hover{
+    color: black;
+    background-color: #899b75;
+}
+form { 
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: auto;
+    max-width: 500px;
+    border-radius: 4px;
+}
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+select, input[type="text"], input[type="date"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button.toggle {
+    background-color:rgba(137, 155, 117, 55%);
+    border:none;
+}
+button.toggle:hover {
+    border:1px solid;
+    cursor: pointer;
+}

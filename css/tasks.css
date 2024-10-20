@@ -1,0 +1,14 @@
+table.taskstb {
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+}
+#add-task {
+    width: 15%;
+    height: 5%;
+}
