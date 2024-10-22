@@ -1,0 +1,22 @@
+div.reportcontent {
+    width:auto;
+    height: auto;
+    text-align: center;
+    padding: 70px;
+}
+.reportcontent p {
+    margin-bottom: 8px;
+}
+div.reportcontent a{
+    color: black;
+}
+div#fifth a{
+    color: black;
+}
+div#third img {
+    width:40%;
+    height:50%;
+}
+div#first, #second, #third, #forth, #fifth {
+    padding:40px;
+}
