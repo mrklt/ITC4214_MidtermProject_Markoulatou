@@ -20,3 +20,17 @@ div#third img {
 div#first, #second, #third, #forth, #fifth {
     padding:40px;
 }
+div.reportcontent a{
+    color:#6f7e59;
+}
+div#fifth {
+    background-color: rgba(111, 126, 89,30%);
+    width:40%;
+    height:50%;
+    border-radius: 4px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+div.end {
+    padding: 40px;
+}
