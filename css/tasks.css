@@ -1,6 +1,6 @@
 
 div.manage {
-    padding:25px;
+    padding:50px;
 }
 form.addtask h3 {
     font-size: 24px;
@@ -51,25 +51,6 @@ table.taskstb td {
 
 table.taskstb tr:hover td {
     background-color: rgba(137, 155, 117, 20%);
-}
-form.filter-section {
-    margin: 20px auto;
-    max-width: 600px;
-    text-align: center;
-    padding-right: 10px;
-}
-
-form.filter-section label {
-    font-size: 16px;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-form.filter-section select {
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 4px;
-    font-size: 16px;
 }
 
 button.complete-btn, button.edit-btn, button.delete-btn {

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/report.css">
-    <script src="./javascript/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./javascript/script.js" defer></script>
   </head>
   <body>
     <div class="menu">
@@ -33,7 +34,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item"></li>
+              <li class="nav-item">
                 <a class="nav-link" href="report.html" aria-current="page">Report</a>
               </li>
             </ul>
@@ -52,31 +53,52 @@
       <a href="#forth"><p>Challenges faced</p></a>
       <a href="#fifth"><p>Inspiration links - Sources</p></a>
     </div>
+
     <div id="first">
       <h4>Coding decisions</h4>
-      <p>I </p>
-
+      <p>This project is a Task Management Application that allows users to create, edit, delete, and filter tasks on a simple interface.
+        The effortly team used JavaScript for all dynamic functionality and avoided inline onclick attributes to keep the HTML file clean. Also, both all the css and the javascript code is organized in a css and in a javascript file. 
+        This approach improves readability, maintainability, and scalability. Of course, during the development proccess the effortly team did a research to get inspiration and learn new things.
+        Some of the inspiration links can be found in the the section Inspiration links - Sources
+      </p>
+      <button>
+        <a href="#fifth"><img src="./images/arrow-down-square.svg" alt="Arrow down"></a>
+      </button>
     </div>
+
     <div id="second">
       <h4>Testing strategy</h4>
-      <p>The testing strategies I followed varry. 
-      I used reverse programming engineering and erase some lines of code in order to check for code that is useless (duplicate).
-      Moreover, i tried to snatch my webpage to check if it is responsive.</p>
-      
+      <p>One of the testing methods our team used is erasing some lines of code in order to check for code that is useless (duplicate).
+      Moreover, the effortly team snatched the webpage to check if it is responsive.
+      Of course the webpage was checked across different browsers.
+      See some of the examples: </p>
+      <br/>
+      <h5>Tasks.html</h5>
+      <p>Scenarios such as adding tasks without complete information and editing tasks were tested to confirm smooth functionality.</p>
+      <h5>Tasks.html - Index.hmtl</h5>
+      <p>For example, one of the things we had to test was the relationship between the add new task form and the latest activity.
+        We tested each feature (task addition, editing, deletion, and filtering) individually to ensure functionality and user interface elements behaved as expected.
+      </p>
+      <img src="./images/Testing.png">
     </div>
+
     <div id="third">
       <h4>Github link and version control</h4>
-      <h5>These are some of my commits during the development process</h5>
-      <img src="./images/versioncontrol.png">
-
-      
+      <h5>Find here the Github link:</h5>
+      <a href="https://github.com/mrklt/ITC4214_Midterm_Markoulatou" target="_blank"><img class="github" src="./images/github.svg" alt="Github"></a>
+      <h5>These are some of the commits during the development process</h5>
+      <img src="./images/versioncontrol.png " alt="Commits">
     </div>
+
     <div id="forth">
       <h4>Challenges faced</h4>
-      <p></p>
-
-      
+      <p>Overall, this project was very fun to develop. 
+        The challenges we faced inspired us to become better and to learn more about web developing.
+        One of the biggest challenges was to add the javascript and jquery code. We started the development of our webpage before the javascript/ jquery lectures, so we had to re-do some parts of the code.
+        This process was tricky for us because we had to avoid having blocks with the same code.
+     </p>
     </div>
+
     <div id="fifth">
       <h4>Inspiration links - Sources</h4>
       <p><a href="https://www.w3schools.com/howto/howto_css_blurred_background.asp" target="_blank">Blurred Background using CSS</a></p>
@@ -88,6 +110,9 @@
       <p><a href="https://www.w3schools.com/css/css_font.asp" target="_blank">CSS Fonts</a></p>
       <p><a href="https://digiti.be/en/jobs/insights/9-exciting-css-features-you-can-start-using-today" target="_blank">CSS Features</a></p>
       <p><a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap icons</a></p>
+      <p><a href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank">How to save latest activity</a></p>
+      <p><a href="https://code.tutsplus.com/how-to-save-a-file-with-javascript--cms-41105t" target="_blank">Save a file with js</a></p>
+      <p><a href="https://www.geeksforgeeks.org/how-to-update-data-in-json-file-using-javascript/" target="_blank">Update file using js</a></p>
     </div>
     <div class="end">
       <h3>End of my report </h3>

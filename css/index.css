@@ -49,3 +49,6 @@ div.headingabout p {
 .features p {
     margin-bottom: 8px;
 }
+div.cta {
+    padding: 20px;
+}

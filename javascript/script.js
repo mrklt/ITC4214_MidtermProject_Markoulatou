@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.querySelector('.toggle');
+$(document).ready(function() {
+    const toggleButton = $('.toggle');
 
-    toggleButton.addEventListener('click', function() {
-        document.body.classList.toggle("dark");
+    toggleButton.on('click', function() {
+        $('body').toggleClass('dark');
     });
 });

@@ -1,3 +1,7 @@
+h2.contactheading {
+    padding:50px;
+}
+
 form.contact button {
     width: 100%;
     font-size: 16px;

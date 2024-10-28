@@ -1,8 +1,12 @@
+
 div.reportcontent {
     width:auto;
     height: auto;
     text-align: center;
-    padding: 70px;
+    padding: 50px;
+}
+h4 {
+    font-weight: bold;
 }
 .reportcontent p {
     margin-bottom: 8px;
@@ -13,7 +17,7 @@ div.reportcontent a{
 div#fifth a{
     color: black;
 }
-div#third img {
+div#third img, #second img {
     width:40%;
     height:50%;
 }
@@ -33,4 +37,11 @@ div#fifth {
 }
 div.end {
     padding: 40px;
+}
+div#third img.github {
+    width:10%;
+    height: 10%;
+}
+div#first a {
+    color:#6f7e59;
 }
