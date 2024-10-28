@@ -15,3 +15,14 @@ div.social-media-icons {
     height:15%;
     margin:auto;
 }
+form.contact input[type="text"],
+form.contact input[type="email"]
+form.contact textarea
+ {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
