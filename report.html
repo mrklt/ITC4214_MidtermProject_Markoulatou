@@ -46,7 +46,7 @@
     <div class="reportcontent">
       <h2>Welcome to my Report</h2>
       <br/>
-      <h4>Content</h4>
+      <h3>Content</h3>
       <a href="#first"><p>Coding decisions</p></a>
       <a href="#second"><p>Testing strategy</p></a>
       <a href="#third"><p>Github link and version control</p></a>
@@ -55,52 +55,72 @@
     </div>
 
     <div id="first">
-      <h4>Coding decisions</h4>
+      <h3>Coding decisions</h3>
       <p>This project is a Task Management Application that allows users to create, edit, delete, and filter tasks on a simple interface.
-        The effortly team used JavaScript for all dynamic functionality and avoided inline onclick attributes to keep the HTML file clean. Also, both all the css and the javascript code is organized in a css and in a javascript file. 
-        This approach improves readability, maintainability, and scalability. Of course, during the development proccess the effortly team did a research to get inspiration and learn new things.
-        Some of the inspiration links can be found in the the section Inspiration links - Sources
+        The effortly team used JavaScript for all dynamic functionality and avoided inline onclick attributes to keep the HTML file clean. 
+        Also, both all the css and the javascript code is organized in a css and in a javascript file accordingly. 
+        This approach improves readability, maintainability, and scalability.</p>
+        <h5>Tasks page - Latest activity</h5>
+        <p>Each row for each task is generated using generateTaskRow. For each operation, there is a different function: aadTask for adding, 
+          markTaskAsComplete for marking complete, editTask for editing and deleteTask for deleting tasks. These operations are updated every time according to the user
+          and the changes are saved in localStorage. With localStorage tasks can persist across sessions. Additionaly, saveTasksToLocalStorage
+          and loadTasksFromLocalStorage keep tasks and activity data available across page refreshes. Users can filter accrding to the status and sort accroding to the due date/ name their tasks
+          with filterTasks and sortTasks. All the buttons are managed through the attachButtonListeners. Also, the effortly team made sure to create a user friendly interface.
+          For example, after adding or updating a task, the form gets cleared with the help of clearForm so that it is prepared for the next task. Furthermore, there is a validation check
+          in addTask that ensures that the required fields are filled, providing feedback via alerts in case of false input. 
+          To make sure that the latest activity will be updated we used logActivity, which records actions with timestamps, maintaining a list 
+          of the latest five actions (by removing oldest entry when activity record is bigger than 5).
+        </p>
+       <p>Of course, during the development proccess the effortly team did a research to get inspiration and learn new things.
+        Some of the inspiration links can be found in the the section Inspiration links - Sources.
       </p>
       <button>
         <a href="#fifth"><img src="./images/arrow-down-square.svg" alt="Arrow down"></a>
       </button>
     </div>
-
+    <hr/>
     <div id="second">
-      <h4>Testing strategy</h4>
+      <h3>Testing strategy</h3>
       <p>One of the testing methods our team used is erasing some lines of code in order to check for code that is useless (duplicate).
       Moreover, the effortly team snatched the webpage to check if it is responsive.
-      Of course the webpage was checked across different browsers.
-      See some of the examples: </p>
+      Of course the webpage was checked across different browsers. 
+      Additionaly, the dark- mode was tested multiple times in each webpage to make sure that it functions efficiently.
+      See some of the testing examples: </p>
       <br/>
       <h5>Tasks.html</h5>
-      <p>Scenarios such as adding tasks without complete information and editing tasks were tested to confirm smooth functionality.</p>
+      <p>Scenarios such as adding tasks without complete information and editing tasks were tested to confirm smooth functionality.
+        Moreover, we added tasks to check how filtering and sorting functionalities work.</p>
+      <img src="./images/Tasks.png" alt="Tasks image">
       <h5>Tasks.html - Index.hmtl</h5>
       <p>For example, one of the things we had to test was the relationship between the add new task form and the latest activity.
         We tested each feature (task addition, editing, deletion, and filtering) individually to ensure functionality and user interface elements behaved as expected.
       </p>
-      <img src="./images/Testing.png">
+      <img src="./images/Testing.png" alt="Tasks - Index image">
+      <h5>Contact.html</h5>
+      <p>For the contact page, we tested many functionalities. For, example we tested if the alert message is working correctly.</p>
+      <img src="./images/contactalert.png" alt="contact alert">
     </div>
-
+    <hr/>
     <div id="third">
-      <h4>Github link and version control</h4>
+      <h3>Github link and version control</h3>
       <h5>Find here the Github link:</h5>
       <a href="https://github.com/mrklt/ITC4214_Midterm_Markoulatou" target="_blank"><img class="github" src="./images/github.svg" alt="Github"></a>
       <h5>These are some of the commits during the development process</h5>
       <img src="./images/versioncontrol.png " alt="Commits">
     </div>
-
+    <hr/>
     <div id="forth">
-      <h4>Challenges faced</h4>
+      <h3>Challenges faced</h3>
       <p>Overall, this project was very fun to develop. 
         The challenges we faced inspired us to become better and to learn more about web developing.
         One of the biggest challenges was to add the javascript and jquery code. We started the development of our webpage before the javascript/ jquery lectures, so we had to re-do some parts of the code.
         This process was tricky for us because we had to avoid having blocks with the same code.
+        The javascript/ jquery part was challenging, because it was completely new for us and required personal research and the help of AI to become completely understandable.
      </p>
     </div>
-
+    <hr/>
     <div id="fifth">
-      <h4>Inspiration links - Sources</h4>
+      <h3>Inspiration links - Sources</h3>
       <p><a href="https://www.w3schools.com/howto/howto_css_blurred_background.asp" target="_blank">Blurred Background using CSS</a></p>
       <p><a href="https://websavers.ca/how-to-create-links-scroll-page-content-wordpress-menu" target="_blank">Auto Scroll using HTML</a></p>
       <p><a href="https://durable.co/ai-website-builder" target="_blank">AI Website Builder for Ideas</a></p>
@@ -115,7 +135,7 @@
       <p><a href="https://www.geeksforgeeks.org/how-to-update-data-in-json-file-using-javascript/" target="_blank">Update file using js</a></p>
     </div>
     <div class="end">
-      <h3>End of my report </h3>
+      <h4>End of my report </h4>
     </div>
 		<footer class="text-center py-2" aria-label="Footer">
 			<div class="container">

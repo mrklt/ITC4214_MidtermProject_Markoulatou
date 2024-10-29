@@ -44,7 +44,7 @@
         </div>
       </nav>
     </div>
-    <div class="manage">
+    <div class="manage" aria-labelledby="manage-tasks-heading">
       <h2>Manage Your Tasks</h2>
     </div>
       <form class="addtask">
@@ -58,12 +58,12 @@
         <label for="task-date">Due Date</label>
         <input type="date" id="task-date" required>
         <br/>
-        <button id="add-task">Add Task</button>
+        <button id="add-task" aria-label="Add task">Add Task</button>
       </form>
       <br/>
       <h2>Tasks and their status</h2>
       <div>
-        <div class="align-self-start">
+        <div >
           <select id="filter-tasks" class="custom-select w-auto" aria-label="Filter tasks by status">
             <option value="all">All Tasks</option>
             <option value="pending">Pending</option>
