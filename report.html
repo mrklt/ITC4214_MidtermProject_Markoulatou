@@ -58,18 +58,19 @@
       <h3>Coding decisions</h3>
       <p>This project is a Task Management Application that allows users to create, edit, delete, and filter tasks on a simple interface.
         The effortly team used JavaScript for all dynamic functionality and avoided inline onclick attributes to keep the HTML file clean. 
-        Also, both all the css and the javascript code is organized in a css and in a javascript file accordingly. 
+        Also, both the CSS and the Javascript code is organized in a CSS and in a Javascript file respectively. 
         This approach improves readability, maintainability, and scalability.</p>
         <h5>Tasks page - Latest activity</h5>
-        <p>Each row for each task is generated using generateTaskRow. For each operation, there is a different function: aadTask for adding, 
+        <p>Each row for each task is generated using generateTaskRow. For each operation, there is a different function: addTask for adding, 
           markTaskAsComplete for marking complete, editTask for editing and deleteTask for deleting tasks. These operations are updated every time according to the user
-          and the changes are saved in localStorage. With localStorage tasks can persist across sessions. Additionaly, saveTasksToLocalStorage
-          and loadTasksFromLocalStorage keep tasks and activity data available across page refreshes. Users can filter accrding to the status and sort accroding to the due date/ name their tasks
+          and the changes are saved in localStorage. With localStorage tasks can persist across sessions. Additionally, saveTasksToLocalStorage
+          and loadTasksFromLocalStorage keep tasks and activity data available across page refreshes. Users can filter according to the status and sort accroding to the due date/ name their tasks
           with filterTasks and sortTasks. All the buttons are managed through the attachButtonListeners. Also, the effortly team made sure to create a user friendly interface.
           For example, after adding or updating a task, the form gets cleared with the help of clearForm so that it is prepared for the next task. Furthermore, there is a validation check
           in addTask that ensures that the required fields are filled, providing feedback via alerts in case of false input. 
           To make sure that the latest activity will be updated we used logActivity, which records actions with timestamps, maintaining a list 
           of the latest five actions (by removing oldest entry when activity record is bigger than 5).
+          The javascript files use $(document).ready to ensure all DOM elements are loaded before any script is executed. This helps to prevent errors when interacting with DOM elements that are not yet rendered.
         </p>
        <p>Of course, during the development proccess the effortly team did a research to get inspiration and learn new things.
         Some of the inspiration links can be found in the the section Inspiration links - Sources.
@@ -93,7 +94,7 @@
       <img src="./images/Tasks.png" alt="Tasks image">
       <h5>Tasks.html - Index.hmtl</h5>
       <p>For example, one of the things we had to test was the relationship between the add new task form and the latest activity.
-        We tested each feature (task addition, editing, deletion, and filtering) individually to ensure functionality and user interface elements behaved as expected.
+        We tested each feature (task addition, editing, deleting, and filtering) individually to ensure functionality and user interface elements behaved as expected.
       </p>
       <img src="./images/Testing.png" alt="Tasks - Index image">
       <h5>Contact.html</h5>
@@ -112,10 +113,13 @@
     <div id="forth">
       <h3>Challenges faced</h3>
       <p>Overall, this project was very fun to develop. 
-        The challenges we faced inspired us to become better and to learn more about web developing.
-        One of the biggest challenges was to add the javascript and jquery code. We started the development of our webpage before the javascript/ jquery lectures, so we had to re-do some parts of the code.
+        The challenges we faced inspired us to become better and to learn more about web development.
+        One of the biggest challenges was to add the Javascript and JQuery code. We started the development of our webpage before the Javascript/ JQuery lectures, so we had to re-do some parts of the code.
         This process was tricky for us because we had to avoid having blocks with the same code.
-        The javascript/ jquery part was challenging, because it was completely new for us and required personal research and the help of AI to become completely understandable.
+        The Javascript/ JQuery part was challenging, because it was completely new for us and required personal research and the help of AI to become completely understandable. 
+        The biggest challenge was to save the tasks and the activity. By using JSON stringify and parse methods we made sure that the array is stored. JSON.stringify() converts an object or an array into a JSON string, while 
+        JSON.parse() converts a JSON string back into an object or an array. In that way we can store, retrieve and manipulate the data (in this case the tasks / activity). So, when a task is added, edited or marked as complete,
+        the code saves the updated tasks to Local Storage. 
      </p>
     </div>
     <hr/>
